@@ -1,0 +1,681 @@
+/* less then 1400px */
+
+@media only screen and (max-width: 1400px) {
+    /* =================================== Desktop Nav =================================== */
+    nav.desktop {
+        padding: 10px 30px;
+        width: calc(100% - 60px);
+    }
+}
+
+
+/* less then 1199px */
+
+@media only screen and (max-width: 1199px) {
+    /* ====================================== Similar ====================================== */
+    section .heading {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    /* ====================================== Header ====================================== */
+    section.home .content .left .top-content .heading {
+        font-size: 50px;
+        line-height: 68px;
+        margin-bottom: 22px;
+    }
+    section.home .content .left .top-content .heading .next-line,
+    section.home .content .left .top-content .heading .next-line .typed-cursor {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+    section.home .content .left .top-content .heading {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    section.home .content .left .top-content .heading .typed-cursor {
+        font-size: 40px;
+        font-weight: 200;
+    }
+    section.home .content .left .bottom-content {
+        padding-top: 50px;
+    }
+    /* ================================== Testimonials ================================== */
+    section.testimonial .content .left {
+        max-width: 300px;
+        min-width: 300px;
+        height: auto;
+    }
+}
+
+
+/* less then 1024px */
+
+@media only screen and (max-width: 1024px) {
+    /* =================================== Desktop Nav =================================== */
+    nav.desktop {
+        padding: 10px 20px;
+        width: calc(100% - 40px);
+    }
+    /* ===================================== Features ===================================== */
+    section.features .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    section.features .cards .card {
+        background: var(--background-color-1);
+        border-radius: 10px;
+        box-shadow: var(--shadow-1);
+        width: calc(50% - 15px);
+        height: auto;
+    }
+    /* ==================================== Portfilio ==================================== */
+    section.portfolio .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    section.portfolio .cards .card {
+        background: var(--background-color-1);
+        border-radius: 10px;
+        box-shadow: var(--shadow-1);
+        width: calc(50% - 15px);
+        height: auto;
+    }
+}
+
+
+/* less then 1023px */
+
+@media only screen and (max-width: 1023px) {
+    /* ====================================== Header ====================================== */
+    section.home .content .left .top-content .heading {
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 22px;
+    }
+    section.home .content .left .top-content .heading .next-line,
+    section.home .content .left .top-content .heading .next-line .typed-cursor {
+        font-size: 35px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+    section.home .content .left .top-content .heading {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    section.home .content .left .top-content .heading .typed-cursor {
+        font-size: 40px;
+        font-weight: 200;
+    }
+    section.home .content .left .top-content .description {
+        line-height: 30px;
+        padding-right: 10%;
+    }
+    /* ================================== Testimonials ================================== */
+    section.testimonial .testimonial-swiper .swiper-button-next,
+    section.testimonial .testimonial-swiper .swiper-button-prev {
+        display: none;
+    }
+    section.testimonial .content .right::before {
+        display: none;
+    }
+    section.testimonial .content .right .box {
+        margin: 0;
+    }
+    section.testimonial .content .right .box::before {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+/* less then 900px */
+
+@media only screen and (max-width: 900px) {
+    /* ================================= Default Classes ================================= */
+    .container {
+        padding: 0 20px;
+    }
+    /* =================================== Scroll Top =================================== */
+    .scrollTopBtn {
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        bottom: 80px;
+    }
+    .phone-nav-open .scrollTopBtn {
+        bottom: 170px;
+    }
+    .scrollTopBtn .icon {
+        fill: var(--theme-color);
+        width: 35px;
+        height: 35px;
+    }
+    /* ================================= Theme Color Change Button ================================= */
+    .themeColorBtn {
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        bottom: 80px;
+    }
+    .scroll-up-show .themeColorBtn {
+        bottom: 130px;
+    }
+    .phone-nav-open .themeColorBtn {
+        bottom: 170px;
+    }
+    .scroll-up-show.phone-nav-open .themeColorBtn {
+        bottom: 220px;
+    }
+    .themeColorBtn span {
+        width: 27px;
+        height: 27px;
+    }
+    /* =================================== Desktop Nav =================================== */
+    nav.desktop {
+        display: none;
+    }
+    /* ==================================== Phone Nav ==================================== */
+    nav.phone {
+        display: block;
+    }
+    /* ====================================== Similar ====================================== */
+    section .heading {
+        font-size: 40px;
+        margin-top: 7px;
+    }
+    /* ===================================== Header ===================================== */
+    section.home .content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    section.home .content .left,
+    section.home .content .right {
+        width: 100%;
+    }
+    section.home .content .left .top-content .heading {
+        font-size: 50px;
+        line-height: 80px;
+    }
+    section.home .content .left .top-content .heading .next-line,
+    section.home .content .left .top-content .heading .next-line .typed-cursor {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 600;
+        margin-top: 8px;
+    }
+    section.home .content .left .top-content .heading {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    section.home .content .left .top-content .heading .typed-cursor {
+        font-size: 40px;
+        font-weight: 200;
+    }
+    section.home .content .left .top-content .description {
+        line-height: 30px;
+        padding-right: 0;
+    }
+    section.home .content .left .bottom-content {
+        padding: 0;
+    }
+    /* ===================================== Header ===================================== */
+    section.about .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section.about .content .left,
+    section.about .content .right {
+        width: 100%;
+    }
+    /* ====================================== Modal ====================================== */
+    .modal-outer .flex .modal .close-btn {
+        position: fixed;
+        top: 5px;
+        right: 5px;
+    }
+    .modal-outer .flex .modal .content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .modal-outer .flex .modal .content .left,
+    .modal-outer .flex .modal .content .right {
+        width: 100%;
+    }
+    .modal-outer .flex .modal .title {
+        color: var(--title-color);
+        font-size: 24px;
+    }
+    .modal-outer .flex .modal .description {
+        color: var(--light-color);
+        font-size: 16px;
+        line-height: 22px;
+    }
+    /* ================================== Testimonials ================================== */
+    section.testimonial .content {
+        padding: 0 5px;
+        width: calc(100% - 10px);
+        flex-direction: column;
+    }
+    section.testimonial .content .left {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    section.testimonial .content .left .box {
+        flex-direction: row;
+        gap: 15px;
+    }
+    section.testimonial .content .left .box .header {
+        max-width: 135px;
+        height: 135px;
+    }
+    section.testimonial .content .left .box .header .image {
+        height: 100%;
+        padding: 0;
+    }
+    section.testimonial .content .left .box .footer {
+        gap: 5px;
+    }
+    section.testimonial .content .left .box .footer .name {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    section.testimonial .content .right .box::before {
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 40px;
+    }
+    section.testimonial .content .right .box .name {
+        color: var(--title-color);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    section.testimonial .content .right .box .ratings {
+        padding: 11px 4px;
+    }
+    section.testimonial .content .right .box .ratings .icon {
+        width: 10px;
+    }
+    /* ====================================== Footer ====================================== */
+    footer .footer-wrapper {
+        padding: 30px 0 90px 0;
+    }
+    .phone-nav-open footer .footer-wrapper {
+        padding: 30px 0 240px 0;
+    }
+}
+
+
+/* less then 768px */
+
+@media only screen and (max-width: 768px) {
+    /* ================================= Default Classes ================================= */
+    .container {
+        padding: 0 20px;
+    }
+    /* ====================================== Similar ====================================== */
+    section {
+        margin-top: 1px;
+        padding: 80px 0px;
+    }
+    section .heading {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    /* ====================================== Header ====================================== */
+    section.home {
+        padding: 0 0 60px 0;
+    }
+    section.home .content .left .top-content .heading {
+        font-size: 50px;
+        line-height: 80px;
+        margin-bottom: 30px;
+    }
+    section.home .content .left .top-content .heading .next-line,
+    section.home .content .left .top-content .heading .next-line .typed-cursor {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 600;
+        margin-top: 8px;
+    }
+    section.home .content .left .top-content .heading {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    section.home .content .left .top-content .heading .typed-cursor {
+        font-size: 40px;
+        font-weight: 200;
+    }
+    section.home .content .left .top-content .description {
+        line-height: 30px;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    /* ===================================== Features ===================================== */
+    section.features .cards .card {
+        width: calc(50% - 15px);
+        height: auto;
+    }
+    section.features .cards .card .content {
+        padding: 40px 20px;
+        gap: 10px;
+    }
+    section.features .cards .card .content .icon {
+        width: 60px;
+    }
+    /* ===================================== Resume ===================================== */
+    section.resume .tab-content.steps .content-ul {
+        gap: 40px 0;
+    }
+    section.resume .tab-content.steps .content-ul .content-li .layer .card {
+        width: 100%;
+    }
+    section.resume .tab-content.steps .content-ul .content-li .layer {
+        width: 100%;
+        border: none !important;
+    }
+    section.resume .tab-content.steps .content-ul .content-li .layer .card::after {
+        top: -40px;
+        left: 50% !important;
+        height: 40px;
+        width: 5px;
+        left: calc(50% - 2.5px);
+        transform: translate(0 -50%);
+    }
+    section.resume .tab-content.steps .content-ul .content-li .layer .card::before {
+        top: -30px;
+        left: 50% !important;
+        left: calc(50% - 2.5px);
+        transform: translate(0 -50%);
+    }
+    /* ===================================== Contact ===================================== */
+    section.contact-me .content {
+        gap: 10px;
+    }
+    section.contact-me .content form .form-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    section.contact-me .content form .form-control .input_field {
+        font-size: 15px;
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
+    /* ======================================= Ad ======================================= */
+    section.ad .box .bg-video {
+        height: 130%;
+        width: auto;
+    }
+    /* ===================================== Contact ===================================== */
+    section.contact-me .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    section.contact-me .content .card {
+        border-radius: 1rem;
+        width: calc(100% - 0.8rem);
+    }
+    section.contact-me .content .card iframe {
+        border-radius: 0.6rem;
+        height: 35vh;
+    }
+    /* ====================================== Footer ====================================== */
+    footer .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* less then 600px */
+
+@media only screen and (max-width: 600px) {
+    /* ===================================== Cursor ===================================== */
+    #cursor {
+        display: none;
+    }
+    /* ================================ Default Classes ================================ */
+    .container {
+        padding: 0 10px;
+    }
+    /* =================================== Scroll Top =================================== */
+    .phone-nav-open .scrollTopBtn {
+        bottom: 240px;
+    }
+    /* =========================== Theme Color Change Button =========================== */
+    .phone-nav-open .themeColorBtn {
+        bottom: 240px;
+    }
+    .scroll-up-show.phone-nav-open .themeColorBtn {
+        bottom: 290px;
+    }
+    /* =================================== Phone Nav =================================== */
+    .phone-nav-open nav.phone {
+        height: 205px;
+    }
+    nav.phone .nav-list {
+        padding: 8px 0 0 0;
+        gap: 8px;
+    }
+    nav.phone .nav-list .box {
+        gap: 50px 0;
+        width: calc(100% / 3 - 10px);
+        display: flex;
+    }
+    nav.phone .nav-list .box:nth-child(1),
+    nav.phone .nav-list .box:nth-child(4) {
+        justify-content: flex-start;
+    }
+    nav.phone .nav-list .box:nth-child(2),
+    nav.phone .nav-list .box:nth-child(5) {
+        justify-content: center;
+    }
+    nav.phone .nav-list .box:nth-child(3),
+    nav.phone .nav-list .box:nth-child(6) {
+        justify-content: flex-end;
+    }
+    nav.phone .nav-list .box .nav-link {
+        width: 94px;
+    }
+    /* ==================================== Similar ==================================== */
+    section {
+        padding: 40px 0px;
+        border-bottom: 2px solid var(--divider-color);
+    }
+    section .small-heading {
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    section .heading {
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+    }
+    /* ==================================== Header ==================================== */
+    section.home {
+        padding: 0 0 40px 0px;
+        margin: 0;
+    }
+    section.home .content .left .top-content .heading {
+        font-size: 31px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    section.home .content .left .top-content .heading .next-line,
+    section.home .content .left .top-content .heading .next-line .typed-cursor {
+        font-size: 23px;
+        line-height: 35px;
+        margin-top: 8px;
+    }
+    section.home .content .left .top-content .heading .typed-cursor {
+        font-size: 40px;
+        font-weight: 200;
+    }
+    section.home .content .left .top-content .description {
+        line-height: 30px;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    section.home .content .left .bottom-content .links {
+        flex-wrap: wrap;
+    }
+    section.home .content .left .bottom-content .links .link {
+        font-size: 25px;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    section.home .content .left .bottom-content .label {
+        margin-bottom: 15px;
+    }
+    /* =================================== Features =================================== */
+    section.features .cards {
+        flex-direction: column;
+    }
+    section.features .cards .card {
+        width: 100%;
+    }
+    section.features .cards .card .content {
+        padding: 40px 20px;
+        gap: 15px;
+    }
+    section.features .cards .card .content .icon {
+        width: 50px;
+    }
+    /* ================================== Portfilio ================================== */
+    section.portfolio .cards {
+        flex-direction: column;
+    }
+    section.portfolio .cards .card {
+        width: 100%;
+    }
+    section.portfolio .cards .card .content {
+        padding: 20px;
+    }
+    /* ===================================== Resume ===================================== */
+    section.resume .tabs-bar {
+        flex-direction: column;
+    }
+    section.resume .tabs-bar .tab {
+        padding: 20px 0;
+    }
+    section.resume .tabs-bar .tab:hover,
+    section.resume .tabs-bar .tab.active {
+        background: var(--background-color-1);
+        box-shadow: var(--shadow-1);
+    }
+    section.resume .tab-content.steps .content-ul .content-li .layer {
+        width: 100%;
+        display: flex;
+    }
+    section.resume .tab-content.skills .skill-box {
+        width: 100%;
+    }
+    /* ================================== Testimonials ================================== */
+    section.testimonial .content .left .box {
+        flex-direction: column;
+        gap: 7px;
+    }
+    section.testimonial .content .left .box .header {
+        max-width: 100%;
+        height: 100%;
+    }
+    section.testimonial .content .left .box .footer .name {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /* ======================================= Ad ======================================= */
+    section.ad .box::after {
+        background: linear-gradient(to bottom, #000000e8 10%, #000000da 40%, var(--theme-color));
+    }
+    section.ad .box .content {
+        flex-direction: column;
+    }
+    section.ad .box .content .left {
+        max-width: calc(100% - 20px);
+        padding: 30px 10px;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+    section.ad .box .content .left .inner_heading {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    section.ad .box .content .left .inner_text {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+    /* ===================================== Contact ===================================== */
+    section.contact-me .content form {
+        gap: 15px;
+    }
+    section.contact-me .content form .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    section.contact-me .content form .form-control label.error {
+        font-size: 11px;
+    }
+    section.contact-me .content form .form-control .input_field {
+        font-size: 15px;
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
+    section.contact-me .content .card form .input_field {
+        font-size: 13px;
+        width: calc(100% - 30px);
+    }
+    section.contact-me .content form button {
+        font-size: 13px;
+        line-height: 13px;
+        padding: 10px;
+    }
+    /* ====================================== Footer ====================================== */
+    footer .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer .content .right .links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer .content .right .links .link {
+        font-size: 20px;
+        line-height: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+/* less then 400px */
+
+@media only screen and (max-width: 400px) {
+    /* ====================================== Header ====================================== */
+    section.home .content .left .bottom-content .links {
+        gap: 12px;
+    }
+    section.home .content .left .bottom-content .links .link {
+        width: 40px;
+        height: 40px;
+    }
+    /* ====================================== Footer ====================================== */
+    footer .content .right .links {
+        gap: 12px;
+    }
+    footer .content .right .links .link {
+        width: 40px;
+        height: 40px;
+    }
+}

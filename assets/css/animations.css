@@ -1,0 +1,115 @@
+/* Loader */
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anti-rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes topBall {
+    50% {
+        top: 0;
+        left: 50%;
+    }
+    75%,
+    100% {
+        top: 50%;
+        left: 0;
+    }
+}
+
+@keyframes bottomBall {
+    25%,
+    50%,
+    75% {
+        top: 50%;
+        left: 100%;
+    }
+    100% {
+        top: 0;
+        left: 50%;
+    }
+}
+
+@keyframes leftBall {
+    25% {
+        top: 50%;
+        left: 0;
+    }
+    50%,
+    100% {
+        top: 100%;
+        left: 50%;
+    }
+}
+
+@keyframes movingBall {
+    0%,
+    100% {
+        top: 0;
+        left: 50%;
+    }
+    25% {
+        top: 50%;
+        left: 100%;
+    }
+    50% {
+        top: 100%;
+        left: 50%;
+    }
+    75% {
+        top: 50%;
+        left: 0;
+    }
+}
+
+@keyframes box-bg {
+    from {
+        background: var(--background-color-1);
+    }
+    to {
+        background: var(--background-color-2);
+    }
+}
+
+
+/* Footer */
+
+@keyframes wave1 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}

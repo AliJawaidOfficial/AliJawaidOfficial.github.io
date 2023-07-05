@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ======================================== Title ======================================== -->
+    <title>Login - Dashboard - Ali Jawaid</title>
+    <!-- ==================================== Shortcut Icon ==================================== -->
+    <link rel="shortcut icon" href="assets/images/logo-light.png" type="image/x-icon" class="Title-Logo" />
+    <!-- ======================================= SEO Tags ======================================= -->
+    <meta name="Description" content="Hey! I am Ali Jawaid and i provide you the best websites you want" />
+    <meta name="Keyword" content="Ali Jawaid, Software Engineer, Web Developer" />
+    <!-- ========================================= CSS ========================================= -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- ===================================== Animations ===================================== -->
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <!-- =================================== Boxicons Icons =================================== -->
+    <link rel="stylesheet" href="../assets/vendors/boxicons/css/boxicons.min.css">
+    <!-- =================================== Unicons Icons =================================== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ===================================== CDN Fonts ===================================== -->
+    <link href="//db.onlinewebfonts.com/c/ef6bdf5ef216552c7e9869841e891ca0?family=Arial+Rounded+MT+Bold" rel="stylesheet" type="text/css" />
+    <!-- ==================================== Google Fonts ==================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- ==================================== Google Icons ==================================== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,-25" />
+</head>
+
+<body class="login" onload="loader();">
+
+
+    <!-- ====================================== Loader ====================================== -->
+    <div class="loader">
+        <div class="loading_line"></div>
+    </div>
+    <!-- ====================================== Loader ====================================== -->
+
+    <!-- ====================================== Cursor ====================================== -->
+    <div id="cursor"></div>
+    <!-- ====================================== Cursor ====================================== -->
+
+    <!-- ====================================== Login ====================================== -->
+    <div class="login_box">
+        <svg class="login_box_logo logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 116">
+            <defs>
+                <style>
+                    .cls-1 {
+                        font-size: 50px;
+                        fill: var(--text-color);
+                        font-family: ArialRoundedMTBold, Arial Rounded MT Bold;
+                    }
+
+                    .cls-2 {
+                        letter-spacing: -0.02em;
+                    }
+
+                    .cls-3 {
+                        fill: none;
+                        stroke: var(--theme-color);
+                        stroke-miterlimit: 10;
+                        stroke-width: 5px;
+                    }
+                </style>
+            </defs>
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <text class="cls-1" transform="translate(139.57 79.43)">ALI
+                        <tspan class="cls-2" x="105" y="0">J</tspan>
+                        <tspan x="137.37" y="0">AWAID</tspan>
+                    </text>
+                    <image width="700" height="960" transform="translate(23.77 13.93) scale(0.1 0.1)"
+                        xlink:href="assets/images/logo.png" />
+                    <circle class="cls-3" cx="58" cy="58" r="54" />
+                </g>
+            </g>
+        </svg>
+        <form action="index.html">
+            <input type="text" name="Admin_Name" id="name_input" placeholder="Admin Name *" />
+            <input type="password" name="Admin_Password" id="password_input" placeholder="Password *" />
+            <button type="submit" name="Admin_Login">Login <i class="uil uil-signout icon"></i></button>
+        </form>
+    </div>
+    <!-- ====================================== Login ====================================== -->
+
+
+    <!-- ===================================== jQuery ===================================== -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- =================================== Sweet Alert JS =================================== -->
+    <script src="assets/vendors/sweetalert/SweetAlert.js"></script>
+    <!-- ==================================== Custom JS ==================================== -->
+    <script src="assets/js/app.js"></script>
+    <!-- ====================================== jQuery JS ====================================== -->
+    <script src="backend/ajax.js"></script>
+
+</body>
+
+</html>

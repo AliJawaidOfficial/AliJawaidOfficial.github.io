@@ -1,0 +1,31 @@
+<svg class="logo" onclick="scrollToTop();" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 116">
+    <defs>
+        <style>
+            .cls-1 {
+                font-size: 50px;
+                fill: var(--text-color);
+                font-family: ArialRoundedMTBold, Arial Rounded MT Bold;
+            }
+            .cls-2 {
+                letter-spacing: -0.02em;
+            }
+            .cls-3 {
+                fill: none;
+                stroke: var(--theme-color);
+                stroke-miterlimit: 10;
+                stroke-width: 5px;
+            }
+        </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <text class="cls-1" transform="translate(139.57 79.43)">ALI
+                <tspan class="cls-2" x="105" y="0">J</tspan>
+                <tspan x="137.37" y="0">AWAID</tspan>
+            </text>
+            <image width="700" height="960" transform="translate(23.77 13.93) scale(0.1 0.1)"
+                xlink:href="logo.png" />
+            <circle class="cls-3" cx="58" cy="58" r="54" />
+        </g>
+    </g>
+</svg>

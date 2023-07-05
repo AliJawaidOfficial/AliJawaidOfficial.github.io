@@ -1,0 +1,956 @@
+/* =================================== Google Icons =================================== */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' -25, 'opsz' 48
+}
+
+
+/* ================================= Default Classes ================================= */
+
+.container {
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    display: block;
+}
+
+
+/* ======================================= Body ======================================= */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--body-color);
+    font-family: var(--font-2);
+    width: 100%;
+}
+
+
+/* ===================================== Scroll Bar ===================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--body-color) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-color-hover);
+}
+
+
+/* ====================================== Selection ====================================== */
+
+::selection {
+    background: var(--theme-color);
+    color: var(--white-color);
+}
+
+
+/* ======================================== Cursor ======================================== */
+
+#cursor {
+    background: var(--theme-color);
+    border-radius: 50%;
+    filter: blur(20px);
+    pointer-events: none;
+    opacity: .4;
+    width: 100px;
+    height: 100px;
+    z-index: 999999999999999999999999;
+    transition: .1 linear;
+    position: absolute;
+    display: none;
+}
+
+
+/* =========================================== Input =========================================== */
+
+.form_row {
+    display: flex;
+    gap: 15px;
+}
+
+.form_row .col {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.form_row.two_input .col {
+    width: 50%;
+}
+
+.form_row.three_input .col {
+    width: 33.3%;
+}
+
+.form_row.three_input .col input,
+.form_row.three_input .col textarea {
+    text-align: center !important;
+}
+
+input,
+textarea,
+select {
+    background: var(--background-color-1);
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: var(--font-2);
+    padding: 15px 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: var(--shadow-3);
+    outline: none;
+    margin-bottom: 15px;
+    width: calc(100% - 30px);
+    resize: none;
+}
+
+select {
+    width: 100% !important;
+}
+
+input.error,
+textarea.error {
+    box-shadow: 0 0 3px #f00, var(--shadow-3);
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: var(--text-color);
+}
+
+textarea {
+    height: 150px;
+}
+
+.upload-image-div {
+    background: var(--background-color-1);
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: var(--shadow-3);
+    outline: none;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    z-index: 0;
+}
+
+.upload-image-div .upload-image-preview {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    border-radius: 10px !important;
+}
+
+.upload-image-div .upload-image-input {
+    display: none;
+}
+
+.upload-image-div .upload-image-label {
+    background: var(--fade-color);
+    border-radius: 10px !important;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.upload-image-div .upload-image-label::after {
+    content: "Choose Image";
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--theme-color);
+    font-size: 23px;
+    font-family: var(--open-sans-bold-font);
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+button {
+    background: var(--theme-color);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--shadow-1);
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background: var(--theme-color-hover);
+}
+
+button.cancel {
+    background: var(--sidebar-hover-color);
+    color: var(--title-color);
+}
+
+button .icon {
+    margin-left: 5px;
+    transition: .4s;
+}
+
+button:hover .icon,
+button:active .icon {
+    margin-left: 10px;
+    transition: .4s;
+}
+
+button.disabled,
+button.disabled:hover,
+button.disabled:active {
+    background: var(--input-color);
+    color: var(--text-color);
+}
+
+button.disabled:hover .icon,
+button.disabled:active .icon {
+    margin-left: 5px;
+}
+
+
+/* ============================================ Alert ============================================ */
+
+.swal-overlay {
+    backdrop-filter: blur(3px);
+}
+
+.swal-modal {
+    background: var(--body-color) !important;
+    color: var(--title-color);
+}
+
+.swal-modal .swal-icon--success__line {
+    background: var(--theme-color) !important;
+}
+
+.swal-modal .swal-icon--success__ring {
+    border-color: var(--theme-color) !important;
+}
+
+.swal-modal .swal-icon--warning,
+.swal-modal .swal-icon--error {
+    background: transparent !important;
+    border-color: var(--theme-color) !important;
+}
+
+.swal-modal .swal-icon:before,
+.swal-modal .swal-icon:after,
+.swal-icon--success__hide-corners {
+    background: transparent !important;
+}
+
+.swal-title {
+    color: var(--title-color);
+}
+
+.swal-text {
+    color: var(--text-color-light);
+}
+
+.swal-modal .swal-icon--warning__body,
+.swal-modal .swal-icon--warning__dot,
+.swal-modal .swal-icon--error__body,
+.swal-modal .swal-icon--error__dot {
+    background: var(--theme-color);
+}
+
+.swal-modal .swal-button--cancel {
+    box-shadow: none;
+    background: var(--sidebar-hover-color);
+    color: var(--title-color);
+}
+
+.swal-modal .swal-button--cancel:hover,
+.swal-modal .swal-button--cancel:focus,
+.swal-modal .swal-button--cancel:active {
+    border: none;
+    outline: none;
+}
+
+.swal-modal .swal-button--confirm {
+    background: var(--theme-color);
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+.swal-modal .swal-button--confirm:hover {
+    background: var(--theme-color-hover);
+}
+
+
+/* ========================================== Divider ========================================== */
+
+.divider {
+    background: var(--divider-color);
+    color: var(--divider-color);
+    margin: 20px 0 !important;
+    display: block;
+}
+
+
+/* =========================================== Loader =========================================== */
+
+.loader {
+    background: var(--body-color);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+
+.loading .loader {
+    display: block;
+}
+
+.loader .loading_line {
+    background: var(--theme-color);
+    height: 100%;
+    animation-name: loading-line;
+    animation-duration: .3s;
+}
+
+
+/* =========================================== Login =========================================== */
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login .login_box {
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+}
+
+.login .login_box .login_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.login .login_box .login_box_logo {
+    width: 60%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.login .login_box button {
+    padding: 13px 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+/* ========================================= Side Bar ========================================= */
+
+body.dashboard {
+    display: flex;
+}
+
+aside.side_bar {
+    background: var(--background-color-1);
+    border-radius: 0 20px 20px 0;
+    box-shadow: var(--shadow-1);
+    width: 250px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    transition: width .3s ease-in-out;
+}
+
+aside.side_bar .side_bar_header {
+    padding: 20px 10px;
+    width: calc(100% - 20px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    transition: gap .3s linear;
+}
+
+aside.side_bar .side_bar_header .logo {
+    width: 100%;
+    display: none;
+    transition: 0;
+}
+
+aside.side_bar.full .side_bar_header .logo.full {
+    width: 180px;
+    display: block;
+}
+
+aside.side_bar .side_bar_header .side_bar_toggle_btn {
+    background: var(--background-color-1);
+    color: var(--theme-color);
+    font-size: 30px;
+    line-height: 35px;
+    padding: 3px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    width: 40px;
+    box-shadow: var(--shadow-1);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    transition: 0s;
+}
+
+aside.side_bar .side_bar_header .side_bar_toggle_btn:hover {
+    color: var(--theme-color-hover);
+}
+
+aside.side_bar .side_bar_nav_list {
+    list-style: none;
+    height: calc(100% - 120px);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+aside.side_bar .side_bar_nav_list::-webkit-scrollbar {
+    width: 5px;
+}
+
+aside.side_bar .side_bar_nav_list .side_bar_nav_link {
+    color: var(--text-color);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 10px;
+    transition: all .3s linear;
+}
+
+aside.side_bar .side_bar_nav_list .side_bar_nav_link .icon {
+    font-size: 20px;
+}
+
+aside.side_bar .side_bar_nav_list .side_bar_nav_link .text {
+    font-size: 16px;
+}
+
+aside.side_bar .side_bar_nav_list .side_bar_nav_link:hover,
+aside.side_bar .side_bar_nav_list .side_bar_nav_link:active,
+aside.side_bar .side_bar_nav_list .side_bar_nav_link:focus,
+aside.side_bar .side_bar_nav_list .side_bar_nav_link.active {
+    background: var(--background-color-1);
+    color: var(--theme-color);
+    box-shadow: var(--shadow-1);
+}
+
+aside.side_bar .side_bar_nav_list .side_bar_nav_link:hover {
+    gap: 15px;
+}
+
+aside.side_bar.collapsed {
+    width: 70px;
+}
+
+aside.side_bar.collapsed .side_bar_header {
+    padding: 0 10px;
+    width: calc(100% - 20px);
+    height: 70px;
+    gap: 0;
+}
+
+aside.side_bar.collapsed .side_bar_header .logo.half {
+    width: 180px;
+    display: block;
+}
+
+aside.side_bar.collapsed .side_bar_header .side_bar_toggle_btn {
+    border-radius: 10px 0 0 10px;
+    transform: translateY(-50%) rotate(180deg);
+    right: -40px;
+}
+
+aside.side_bar.collapsed .side_bar_nav_list {
+    height: calc(100% - 70px);
+}
+
+aside.side_bar.collapsed .side_bar_nav_list .side_bar_nav_link {
+    justify-content: center;
+    gap: 0;
+    padding: 5px 0;
+}
+
+aside.side_bar.collapsed .side_bar_nav_list .side_bar_nav_link .icon {
+    font-size: 25px;
+}
+
+aside.side_bar.collapsed .side_bar_nav_list .side_bar_nav_link .text {
+    display: none;
+}
+
+aside.side_bar.collapsed .side_bar_nav_list .side_bar_nav_link:hover .tooltip {
+    display: inline-block;
+}
+
+
+/* ========================================== Content ========================================== */
+
+aside.content {
+    width: calc(100% - 250px);
+    transition: width .3s ease-in-out;
+}
+
+aside.side_bar.collapsed~.content {
+    width: calc(100% - 70px);
+}
+
+
+/* =========================================== Header =========================================== */
+
+.content header {
+    backdrop-filter: blur(15px);
+    background: var(--background-color-1);
+    padding: 20px;
+    box-shadow: var(--shadow-1);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.content header .theme {
+    background: var(--background-color-1);
+    fill: var(--theme-color);
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-3);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-30deg);
+}
+
+.content header .theme:hover {
+    fill: var(--theme-color-hover);
+}
+
+.content header .theme .icon {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.content header .link {
+    color: var(--text-color-light);
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .3s linear;
+    margin-left: 10px;
+}
+
+.content header .link:hover {
+    color: var(--text-color);
+}
+
+
+/* ========================================== Section ========================================== */
+
+section {
+    padding: 15px;
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+section .section_divider {
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+section .heading {
+    color: var(--theme-color);
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--title-color);
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .heading .left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+section .heading h2 {
+    display: inline-block;
+}
+
+section .add_btn {
+    background: transparent;
+    color: var(--title-color);
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+section .add_btn .tooltip {
+    background: var(--theme-color-hover);
+    color: var(--white-color);
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: .5s;
+    width: 95px;
+    display: none;
+}
+
+section .add_btn .tooltip::before {
+    content: "";
+    background: var(--theme-color-hover);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 1.3px);
+    right: -1px;
+    transform: rotate(45deg) translateY(-50%);
+    z-index: 9;
+}
+
+section .add_btn:hover {
+    background: var(--sidebar-hover-color);
+}
+
+section .add_btn:hover .tooltip {
+    display: block;
+}
+
+
+/* =========================================== Table =========================================== */
+
+section .table_responsive {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 5px;
+}
+
+section .table_responsive::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 10px;
+}
+
+section .table_responsive::-webkit-scrollbar-track {
+    background: var(--body-color) !important;
+    border-radius: 10px;
+}
+
+section .table_responsive::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 10px;
+}
+
+section .table_responsive::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-color-hover);
+}
+
+section .table_responsive table {
+    padding: 0 !important;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section .table_responsive table thead {
+    background: var(--sidebar-hover-color);
+}
+
+section .table_responsive table thead tr th {
+    color: var(--text-color);
+}
+
+section .table_responsive table thead tr th,
+section .table_responsive table tbody tr td {
+    text-align: left;
+    padding: 6px 10px;
+    border: none !important;
+}
+
+section .table_responsive table tbody tr {
+    background: var(--table-hover-color);
+    border-top: 1px solid var(--text-color);
+}
+
+section .table_responsive table tbody tr td {
+    color: var(--text-color);
+}
+
+section .table_responsive table tbody tr td .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+section .table_responsive table tbody tr td .buttons .action_btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+
+/* ====================================== Project Section ====================================== */
+
+section.Projects .table_responsive table {
+    min-width: 1700px;
+}
+
+section.Projects .table_responsive table thead tr th:nth-child(1),
+section.Projects .table_responsive table tbody tr td:nth-child(1) {
+    width: 300px;
+}
+
+section.Projects .table_responsive table tbody tr td:nth-child(1) img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+section.Projects .table_responsive table thead tr th:nth-child(2),
+section.Projects .table_responsive table tbody tr td:nth-child(2) {
+    width: 500px;
+}
+
+section.Projects .table_responsive table thead tr th:nth-child(3),
+section.Projects .table_responsive table tbody tr td:nth-child(3) {
+    width: 400px;
+}
+
+section.Projects .table_responsive table thead tr th:nth-child(4),
+section.Projects .table_responsive table tbody tr td:nth-child(4) {
+    width: 250px;
+}
+
+section.Projects .table_responsive table thead tr th:nth-child(5),
+section.Projects .table_responsive table tbody tr td:nth-child(5) {
+    width: 250px;
+}
+
+
+/* =================================== Qualification Section =================================== */
+
+section.Qualification .table_responsive table {
+    min-width: 1350px;
+}
+
+section.Qualification .table_responsive table thead tr th:nth-child(1),
+section.Qualification .table_responsive table tbody tr td:nth-child(1) {
+    width: 300px;
+}
+
+section.Qualification .table_responsive table thead tr th:nth-child(2),
+section.Qualification .table_responsive table tbody tr td:nth-child(2) {
+    width: 400px;
+}
+
+section.Qualification .table_responsive table thead tr th:nth-child(3),
+section.Qualification .table_responsive table tbody tr td:nth-child(3) {
+    width: 200px;
+}
+
+section.Qualification .table_responsive table thead tr th:nth-child(4),
+section.Qualification .table_responsive table tbody tr td:nth-child(4) {
+    width: 200px;
+}
+
+section.Qualification .table_responsive table thead tr th:nth-child(5),
+section.Qualification .table_responsive table tbody tr td:nth-child(5) {
+    width: 250px;
+}
+
+
+/* ======================================= Skill Section ======================================= */
+
+section.Skills .table_responsive table {
+    min-width: 750px;
+}
+
+section.Skills .table_responsive table thead tr th:nth-child(1),
+section.Skills .table_responsive table tbody tr td:nth-child(1) {
+    width: 300px;
+}
+
+section.Skills .table_responsive table thead tr th:nth-child(2),
+section.Skills .table_responsive table tbody tr td:nth-child(2) {
+    width: 200px;
+}
+
+section.Skills .table_responsive table thead tr th:nth-child(3),
+section.Skills .table_responsive table tbody tr td:nth-child(3) {
+    width: 250px;
+}
+
+
+/* ======================================= Testinomials ======================================= */
+
+section.Testinomials .table_responsive table {
+    min-width: 1550px;
+}
+
+section.Testinomials .table_responsive table thead tr th:nth-child(1),
+section.Testinomials .table_responsive table tbody tr td:nth-child(1) {
+    width: 300px;
+}
+
+section.Testinomials .table_responsive table thead tr th:nth-child(1) .image,
+section.Testinomials .table_responsive table tbody tr td:nth-child(1) .image {
+    border-radius: 10px;
+    width: 90%;
+}
+
+section.Testinomials .table_responsive table thead tr th:nth-child(2),
+section.Testinomials .table_responsive table tbody tr td:nth-child(2) {
+    width: 300px;
+}
+
+section.Testinomials .table_responsive table thead tr th:nth-child(3),
+section.Testinomials .table_responsive table tbody tr td:nth-child(3) {
+    width: 500px;
+}
+
+section.Testinomials .table_responsive table thead tr th:nth-child(4),
+section.Testinomials .table_responsive table tbody tr td:nth-child(4) {
+    width: 200px;
+}
+
+section.Testinomials .table_responsive table tbody tr td:nth-child(4) .ratings {
+    background: var(--background-color-1);
+    padding: 7px 8px;
+    border-radius: 5px;
+    box-shadow: var(--shadow-1);
+    width: 95px;
+    margin: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 0 5px;
+}
+
+section.Testinomials .table_responsive table tbody tr td:nth-child(4) .ratings .icon {
+    fill: #FFAB1A;
+    width: 16px;
+}
+
+section.Testinomials .table_responsive table thead tr th:nth-child(5),
+section.Testinomials .table_responsive table tbody tr td:nth-child(5) {
+    width: 250px;
+}
+
+
+/* ========================================= Messages ========================================= */
+
+section.Messages .table_responsive table {
+    min-width: 2050px;
+}
+
+section.Messages .table_responsive table thead tr th:nth-child(1),
+section.Messages .table_responsive table tbody tr td:nth-child(1) {
+    width: 300px;
+}
+
+section.Messages .table_responsive table thead tr th:nth-child(2),
+section.Messages .table_responsive table tbody tr td:nth-child(2) {
+    width: 300px;
+}
+
+section.Messages .table_responsive table thead tr th:nth-child(3),
+section.Messages .table_responsive table tbody tr td:nth-child(3) {
+    width: 300px;
+}
+
+section.Messages .table_responsive table thead tr th:nth-child(4),
+section.Messages .table_responsive table tbody tr td:nth-child(4) {
+    width: 300px;
+}
+
+section.Messages .table_responsive table thead tr th:nth-child(5),
+section.Messages .table_responsive table tbody tr td:nth-child(5) {
+    width: 600px;
+}
+
+section.Messages .table_responsive table thead tr th:nth-child(6),
+section.Messages .table_responsive table tbody tr td:nth-child(6) {
+    width: 250px;
+}

@@ -1,0 +1,113 @@
+/* less then 600px */
+
+@media only screen and (max-width: 600px) {
+    /* ========================================== Cursor ========================================== */
+    #cursor {
+        display: none;
+    }
+    /* ========================================== Cursor ========================================== */
+    /* =========================================== Form =========================================== */
+    .form_row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form_row.reverse {
+        flex-direction: column-reverse;
+    }
+    .form_row .col {
+        width: 100%;
+    }
+    .form_row.two_input {
+        flex-direction: row;
+    }
+    .form_row.two_input .col {
+        width: 50%;
+    }
+    .form_row.three_input {
+        flex-direction: row;
+    }
+    .form_row.three_input .col {
+        width: 33.3%;
+    }
+    input,
+    textarea,
+    select {
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: calc(100% - 20px);
+    }
+    button {
+        font-size: 14px;
+        padding: 7px;
+    }
+    /* =========================================== Form =========================================== */
+    /* ========================================= Side Bar ========================================= */
+    aside.side_bar {
+        background: var(--body-color);
+        box-shadow: 0 0px 9px var(--theme-shadow-color);
+        width: 250px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width .4s ease-in-out;
+    }
+    aside.content {
+        width: 100% !important;
+    }
+    aside.side_bar.collapsed {
+        position: sticky;
+        top: 0;
+    }
+    aside.side_bar.collapsed .side_bar_nav_list .side_bar_nav_link:hover .tooltip {
+        display: none;
+    }
+    /* ========================================= Side Bar ========================================= */
+    /* ========================================== Content ========================================== */
+    aside.content {
+        filter: blur(10px);
+        transition: filter .3s ease-in-out;
+    }
+    aside.side_bar.collapsed~.content {
+        width: calc(100% - 70px) !important;
+        filter: blur(0);
+    }
+    /* ========================================== Content ========================================== */
+    /* ========================================== Section ========================================== */
+    section .heading {
+        margin-bottom: 10px;
+    }
+    section .add_btn_outer {
+        justify-content: flex-start;
+    }
+    section .add_btn_outer .add_btn {
+        font-size: 13px;
+        padding: 5px 7px;
+        text-transform: uppercase;
+    }
+    /* ========================================== Section ========================================== */
+    /* =========================================== Login =========================================== */
+    .login .login_box {
+        padding: 10px;
+    }
+    .login .login_box .login_header .login_box_logo {
+        width: 30px;
+    }
+    .login .login_box .login_header .logo_name {
+        color: var(--theme-color);
+        font-size: 23px;
+        text-transform: uppercase;
+        transition: font-size .3s ease-in-out;
+    }
+    /* =========================================== Login =========================================== */
+}
+
+@media only screen and (max-width: 425px) {
+    /* =========================================== Login =========================================== */
+    .login .login_box {
+        margin: 0 10px;
+        max-width: 100%;
+    }
+    /* =========================================== Login =========================================== */
+}

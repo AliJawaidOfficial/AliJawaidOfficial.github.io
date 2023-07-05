@@ -1,0 +1,84 @@
+:root {
+    /* =============================== Background Colors =============================== */
+    --body-color: #ecf0f3;
+    --fade-color: #000000cc;
+    --nav-color: #ecf0f3de;
+    --phone-nav-bar-color: #6c737c;
+    --phone-nav-bar-hover-color: #ffffffa6;
+    --background-single-color: #e2e8ec;
+    --background-color-1: linear-gradient(145deg, #e2e8ec, #ffffff);
+    --background-color-1-hover: linear-gradient(145deg, #e0e0e0, #fff);
+    --background-color-2: #f3f3f3;
+    /* ================================== Text Colors ================================== */
+    --title-color: #3c3e41;
+    --text-color: #767676;
+    --divider-color: #d9dee2;
+    /* ================================= Shadow Colors ================================= */
+    --shadow-1: 10px 10px 19px #D1D9E6, -10px -10px 19px #ffffff;
+    --shadow-2: 0 0 4px 4px #fff;
+    --shadow-3: inset 8px 8px 16px #c6cbd3b7, inset -8px -8px 16px #ececec9d;
+    /* ================================= Default Colors ================================= */
+    --white-color: #fff;
+    --black-color: #000;
+    /* ===================================== Fonts ===================================== */
+    --font-1: 'Poppins', sans-serif;
+    --font-2: 'Montserrat', sans-serif;
+    --transition: 0.4s;
+    /* ================================== Theme Colors ================================== */
+    --theme-color-blue: #0080ff;
+    --theme-color-purple: #6610f2;
+    --theme-color-green: #00c267;
+    --theme-color-red: #ff010e;
+}
+
+.Dark-Mode {
+    /* =============================== Background Colors =============================== */
+    --body-color: #212428;
+    --fade-color: #000000cc;
+    --nav-color: #212428de;
+    --phone-nav-bar-color: #a3a3a3;
+    --phone-nav-bar-hover-color: #ffffff08;
+    --background-single-color: #1e2024;
+    --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
+    --background-color-1-hover: linear-gradient(to right bottom, #212428, #16181c);
+    --background-color-2: #212428;
+    --divider-color: #dce1e4;
+    /* ================================== Text Colors ================================== */
+    --title-color: #fff;
+    --text-color: #c4cfde;
+    --light-color: #9ea0a3;
+    --divider-color: #17191c;
+    /* ================================= Shadow Colors ================================= */
+    --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    --shadow-2: 0 0 4px 4px #1c1e22;
+    --shadow-3: inset 2px 2px 8px #00000075, inset -2px -2px 8px #383e4575;
+    --shadow-4: 1px 4px 2px -3px #000000b3 inset, -1px -3px 3px -2px #ffffff33 inset;
+}
+
+.Theme-Color-Blue {
+    /* ================================== Theme Colors ================================== */
+    --theme-color: #0080ff;
+    --theme-color-hover: #0070e0;
+    --theme-color-dark: #0052a5;
+}
+
+.Theme-Color-Purple {
+    /* ================================== Theme Colors ================================== */
+    --theme-color: #6610f2;
+    --theme-color-hover: #5b13cf;
+    --theme-color-dark: #6610f2;
+}
+
+.Theme-Color-Green {
+    /* ================================== Theme Colors ================================== */
+    --theme-color: #00c267;
+    --theme-color-hover: #00914d;
+    --theme-color-dark: #006636;
+}
+
+.Theme-Color-Red {
+    /* ================================== Theme Colors ================================== */
+    --theme-color: #ff010e;
+    --theme-color-hover: #ce000a;
+    --theme-color-dark: #aa0009;
+}

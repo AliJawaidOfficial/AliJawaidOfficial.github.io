@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ======================================== Title ======================================== -->
+    <title>Ali Jawaid</title>
+    <!-- ==================================== Shortcut Icon ==================================== -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" class="Title-Logo" />
+    <!-- ======================================= SEO Tags ======================================= -->
+    <meta name="Description" content="Hey! I am Ali Jawaid and i provide you the best websites as you want" />
+    <meta name="Keyword" content="Ali Jawaid, Software Engineer, Web Developer" />
+    <!-- ========================================= CSS ========================================= -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <!-- ===================================== Animations ===================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- =================================== Aos Animation =================================== -->
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css" />
+    <!-- =================================== Swiper Slider =================================== -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css" />
+    <!-- =================================== Boxicons Icons =================================== -->
+    <link rel="stylesheet" href="assets/vendors/boxicons/css/boxicons.min.css">
+    <!-- ==================================== CDN Fonts ==================================== -->
+    <link href="//db.onlinewebfonts.com/c/ef6bdf5ef216552c7e9869841e891ca0?family=Arial+Rounded+MT+Bold" rel="stylesheet" type="text/css" />
+    <!-- ==================================== Google Fonts ==================================== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+    <!-- ==================================== Google Icons ==================================== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,-25" />
+</head>
+
+<body onload="loader();" class="Light-Mode h-hide">
+
+    <!-- ====================================== Loader ====================================== -->
+    <div class="loader_container" id="loader">
+        <div class="spinner"><span class="loading_text_change" data-typed-items="Loading..."></span></div>
+    </div>
+    <!-- ====================================== Loader ====================================== -->
+
+    <!-- ====================================== Cursor ====================================== -->
+    <div id="cursor"></div>
+    <!-- ====================================== Cursor ====================================== -->
+
+    <!-- =================================== Scroll Button =================================== -->
+    <button type="button" id="scrollTopBtn" class="scrollTopBtn" onclick="scrollToTop();">
+        <svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="icon" viewBox="0 0 24 24">
+            <path
+                d="M17.71,9.88l-4.3-4.29a2,2,0,0,0-2.82,0L6.29,9.88a1,1,0,0,0,0,1.41,1,1,0,0,0,1.42,0L11,8V19a1,1,0,0,0,2,0V8l3.29,3.29a1,1,0,1,0,1.42-1.41Z" />
+        </svg>
+    </button>
+    <!-- =================================== Scroll Button =================================== -->
+
+    <!-- ============================= Theme Color Change Button ============================= -->
+    <button type="button" id="themeColorBtn" class="themeColorBtn" onclick="ThemeColorChanger();">
+        <span></span>
+    </button>
+    <!-- ============================= Theme Color Change Button ============================= -->
+
+    <!-- ======================================== Nav ======================================== -->
+    <nav id="desktopNav" class="desktop">
+        <div class="container">
+            <div class="layer">
+                <div class="left">
+                    <svg class="logo" onclick="scrollToTop();" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 116">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    font-size: 50px;
+                                    fill: var(--text-color);
+                                    font-family: ArialRoundedMTBold, Arial Rounded MT Bold;
+                                }
+
+                                .cls-2 {
+                                    letter-spacing: -0.02em;
+                                }
+
+                                .cls-3 {
+                                    fill: none;
+                                    stroke: var(--theme-color);
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 5px;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <text class="cls-1" transform="translate(139.57 79.43)">ALI
+                                    <tspan class="cls-2" x="105" y="0">J</tspan>
+                                    <tspan x="137.37" y="0">AWAID</tspan>
+                                </text>
+                                <image width="700" height="960" transform="translate(23.77 13.93) scale(0.1 0.1)"
+                                    xlink:href="dashboard/assets/images/logo.png" />
+                                <circle class="cls-3" cx="58" cy="58" r="54" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="right">
+                    <div class="nav-link-list">
+                        <a href="#Home" class="nav-link">home</a>
+                        <a href="#About" class="nav-link">about</a>
+                        <a href="#Resume" class="nav-link">resume</a>
+                        <a href="#Portfolio" class="nav-link">portfolio</a>
+                        <a href="#Services" class="nav-link">services</a>
+                        <!-- <a href="#Testimonial" class="nav-link">testimonial</a> -->
+                        <a href="#Contact" class="nav-link">contact</a>
+                        <div class="button-box">
+                            <button type="button" id="themeBtn" class="uil" onclick="ThemeChanger();"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ======================================== Nav ======================================== -->
+
+    <!-- ===================================== Phone Nav ===================================== -->
+    <nav id="phoneNav" class="phone">
+        <div class="layer">
+            <a href="javascript:void(0)">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 116">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                font-size: 50px;
+                                fill: var(--text-color);
+                                font-family: ArialRoundedMTBold, Arial Rounded MT Bold;
+                            }
+
+                            .cls-2 {
+                                letter-spacing: -0.02em;
+                            }
+
+                            .cls-3 {
+                                fill: none;
+                                stroke: var(--theme-color);
+                                stroke-miterlimit: 10;
+                                stroke-width: 5px;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <text class="cls-1" transform="translate(139.57 79.43)">ALI
+                                <tspan class="cls-2" x="105" y="0">J</tspan>
+                                <tspan x="137.37" y="0">AWAID</tspan>
+                            </text>
+                            <image width="700" height="960" transform="translate(23.77 13.93) scale(0.1 0.1)"
+                                xlink:href="dashboard/assets/images/logo.png" />
+                            <circle class="cls-3" cx="58" cy="58" r="54" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <button type="button" id="phoneThemeBtn" class="uil" onclick="ThemeChanger();"></button>
+        </div>
+        <div class="nav-list">
+            <div class="box">
+                <a href="#Home" class="nav-link Home" id="navLinkHome">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="icon" viewBox="0 0 24 24">
+                        <path
+                            d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z" />
+                    </svg>
+                    <span class="text">home</span>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#Resume" class="nav-link Resume" id="navLinkResume">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" data-name="Layer 1" viewBox="0 0 24 24">
+                        <path
+                            d="M19.95,5.536l-3.485-3.485c-1.322-1.322-3.08-2.05-4.95-2.05H7C4.243,0,2,2.243,2,5v14c0,2.757,2.243,5,5,5h10c2.757,0,5-2.243,5-5V10.485c0-1.87-.728-3.627-2.05-4.95Zm-1.414,1.414c.318,.318,.587,.671,.805,1.05h-4.341c-.551,0-1-.449-1-1V2.659c.379,.218,.733,.487,1.05,.805l3.485,3.485Zm1.464,12.05c0,1.654-1.346,3-3,3H7c-1.654,0-3-1.346-3-3V5c0-1.654,1.346-3,3-3h4.515c.163,0,.325,.008,.485,.023V7c0,1.654,1.346,3,3,3h4.977c.015,.16,.023,.322,.023,.485v8.515Zm-4.5-6h-7c-1.378,0-2.5,1.122-2.5,2.5v2c0,1.378,1.122,2.5,2.5,2.5h7c1.378,0,2.5-1.122,2.5-2.5v-2c0-1.378-1.122-2.5-2.5-2.5Zm.5,4.5c0,.276-.224,.5-.5,.5h-7c-.276,0-.5-.224-.5-.5v-2c0-.276,.224-.5,.5-.5h7c.276,0,.5,.224,.5,.5v2ZM6,10c0-.552,.448-1,1-1h2c.552,0,1,.448,1,1s-.448,1-1,1h-2c-.552,0-1-.448-1-1Zm0-4c0-.552,.448-1,1-1h2c.552,0,1,.448,1,1s-.448,1-1,1h-2c-.552,0-1-.448-1-1Z" />
+                    </svg>
+                    <span class="text">resume</span>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#Portfolio" class="nav-link Portfolio" id="navLinkPortfolio">
+                    <svg id="Layer_1" class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+                        <path
+                            d="m19 1h-14a5.006 5.006 0 0 0 -5 5v12a5.006 5.006 0 0 0 5 5h14a5.006 5.006 0 0 0 5-5v-12a5.006 5.006 0 0 0 -5-5zm-14 2h14a3 3 0 0 1 3 3v1h-20v-1a3 3 0 0 1 3-3zm14 18h-14a3 3 0 0 1 -3-3v-9h20v9a3 3 0 0 1 -3 3zm0-8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 0-2h12a1 1 0 0 1 1 1zm-4 4a1 1 0 0 1 -1 1h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 1 1zm-12-12a1 1 0 1 1 1 1 1 1 0 0 1 -1-1zm3 0a1 1 0 1 1 1 1 1 1 0 0 1 -1-1zm3 0a1 1 0 1 1 1 1 1 1 0 0 1 -1-1z" />
+                    </svg>
+                    <span class="text">portfolio</span>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#Services" class="nav-link Features" id="navLinkFeatures">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="icon features" viewBox="0 0 512 512">
+                        <path
+                            d="M290.2 24c-4.7 2.9-6.2 7.3-6.2 17.8v8.9l-6.7 2.3c-3.8 1.2-9.3 3.5-12.4 5.1l-5.6 2.8-5.9-6c-6.7-6.9-10-8.9-14.4-8.9-4.8 0-7.7 2.1-17.7 12.2-14.1 14.5-14.5 17.7-3.1 29.5l7.1 7.3-3.3 6.7c-1.9 3.8-4.1 9.3-5.1 12.3l-1.7 5.5-10.4.5c-16.9.8-18.8 3.2-18.8 24 0 14.4 1 18.3 5.5 21.8 2.4 1.9 4 2.2 13 2.2h10.2l2.8 7.7c1.5 4.3 3.8 10 5.2 12.7l2.4 4.8-6.9 7.2c-11.6 12-11.1 15.4 4.7 30.9l10.8 10.7h5c5.6 0 7.4-1.1 16-9.3l5.2-5.1 6.6 3.2c3.6 1.8 9 4 12 4.9l5.5 1.7v9.1c0 10.1 1.5 14.4 6.3 17.9 2.6 1.9 4.2 2.1 18.2 2.1s15.6-.2 18.2-2.1c4.8-3.5 6.3-7.8 6.3-17.9v-9l5.4-1.7c3-1 8.4-3.1 11.9-4.8 3.5-1.6 6.8-3 7.2-3 .5 0 4.1 3.1 8.1 7 7 6.9 7.3 7 12.4 7h5.3l10.8-10.7c15.8-15.5 16.3-18.9 4.7-30.9l-7-7.2 1.7-3.1c1.5-3.1 1.6-3.1 9.3-3.1 11.2 0 15.2-3.6 15.2-13.7v-4.8l6.2-2.8 6.2-2.7 4.1 4c7.6 7.5 13 6.5 23.3-4.4 8.5-9 9-13.6 2.1-21.1l-3.9-4.2 2.6-6 2.6-6.1 6.4-.4c5.4-.3 6.9-.9 9.2-3.1 2.6-2.7 2.7-3 2.7-14.8V94.8l-3.3-2.9c-2.8-2.5-4-2.9-9-2.9h-5.7l-2.8-6.2-2.7-6.2 3.4-3.6c7.5-7.6 7.1-12.6-1.8-21.8-10.9-11.4-15.5-12-24.8-3.4l-2.6 2.4-6-2.3-6-2.3-.4-6.4c-.4-5.8-.8-6.8-3.6-9.3-3.2-2.8-3.5-2.9-14.8-2.9-11.4 0-11.6 0-14.5 2.9-2.6 2.6-2.9 3.6-2.9 9V45l-6.2 2.9-6.3 2.8-3.5-3.2c-8-7.5-12.1-7.5-19.9 0-5.6 5.3-5.8 5.4-9.4 4.4l-3.7-1v-9c0-10.6-1.5-15-6.2-17.9-2.9-1.8-5-2-18.3-2s-15.4.2-18.3 2zM318 48.3c0 7.7.4 11.9 1.3 13.1.7.9 4.5 2.6 8.4 3.7 6 1.5 7.9 2.6 11.3 6.1 4.4 4.7 4.4 5.3 1 13.1-1.9 4.2-2.4 4.7-5.3 4.7-1.8 0-6.1-1-9.7-2.1-15-4.8-35-1.8-48.7 7.1-12.6 8.3-23.3 23.7-26.2 37.8-6.7 32.3 14.1 63.8 46.6 70.7 13.3 2.8 25.6 1.1 38.9-5.4 9.3-4.6 17.2-11.7 22.9-20.6 2.1-3.3 5.4-7.6 7.3-9.6l3.3-3.6 6.5 2.6 6.4 2.6v5.4c0 4.3-.7 6.6-3.5 11.7-5.2 9.2-4.9 10.4 4.5 19.9l8 8-6.5 6.5-6.5 6.4-7.7-7.6c-8.8-8.5-11.1-9.6-15.1-7.5-1.5.8-5.6 3.1-9.2 5-3.6 2-10.5 4.7-15.4 6.2-5 1.4-9.8 3.3-10.8 4.2-1.4 1.3-1.8 3.6-2 13.2l-.3 11.6h-18l-.3-11.6c-.2-9.6-.6-11.9-2-13.2-1-.9-5.8-2.8-10.8-4.2-4.9-1.5-11.8-4.2-15.4-6.2-3.6-1.9-7.7-4.2-9.2-5-4-2.1-6.3-1-15.1 7.5l-7.7 7.6-6.5-6.4-6.5-6.5 8-8c5.9-5.9 8-8.7 8-10.6 0-1.4-2.2-6.8-4.9-12-2.8-5.2-5.9-13-7.1-17.4-3.1-11.6-3.7-11.9-17.5-12.3l-11.5-.4V135h10.5c14.8 0 15.6-.5 18.6-12.5 1.4-5.8 6.9-18.3 9.8-22.4 4-5.5 3-8.4-5.9-17.5l-8-8.2 6.5-6.4 6.5-6.4 8.4 8.2c5.1 5 9.2 8.2 10.5 8.2 1.1 0 6.2-2.2 11.3-4.9 5.1-2.8 13.4-6.1 18.3-7.6 5-1.4 9.6-3.3 10.3-4.2.8-1.1 1.2-5.5 1.2-13V37h19v11.3zm85 0c0 7.6 1.1 8.9 9.1 11.3 3 .9 8.4 3.2 12.1 5.1 7.9 4 9.1 3.9 15.5-2l4.4-4 2.2 2.1 2.1 2.2-4.7 4.8c-5.6 5.6-5.8 7.5-1.8 14.6 1.6 2.8 3.7 7.8 4.6 11.1 2.3 8.3 4.9 10.5 12.6 10.5 5.9 0 5.9 0 5.9 3s0 3-5.9 3c-7.5 0-10.4 2.1-12 8.7-.7 2.7-2.8 7.9-4.7 11.6-1.9 3.8-3.4 7.7-3.4 8.8 0 1.1 2 4.1 4.5 6.8l4.4 4.7-2.1 2.2-2.2 2.1-4.7-4.4c-2.7-2.5-5.8-4.5-7-4.5-1.2 0-4.5 1.3-7.3 2.9-2.8 1.6-7.8 3.7-11.1 4.7-9 2.7-10.5 4.4-10.5 12.1v6.3h-3c-3 0-3-.1-3-5.3 0-8.1-1.4-9.8-10-12.8-4.1-1.4-9.8-3.7-12.7-5.2-2.9-1.5-5.9-2.7-6.8-2.7-.9 0-3.8 2.1-6.6 4.7l-5 4.7-2.2-2.2-2.1-2.2 3.6-3.7c6-6.2 6.3-8.2 2.3-15.7-1.9-3.5-4.1-9.1-4.9-12.3-2-7.7-4.1-9.3-12.2-9.3H334v-3c0-3 0-3 5.6-3 5.4 0 9.2-1.2 10.6-3.4.4-.6 1.5-3.6 2.4-6.6.8-3 2.9-7.9 4.5-10.7 4.1-7.3 3.8-10.3-1.3-15.9l-4.1-4.5 2.1-2.1 2.1-2.2 5 4.7c2.8 2.6 5.8 4.7 6.7 4.7.9 0 4-1.3 6.8-2.8 5.7-3.2 9.1-4.6 15.4-6.2 3.5-.9 4.6-1.8 5.8-4.5.8-1.9 1.4-5.5 1.4-8 0-4.3.1-4.5 3-4.5h3v6.3zm-85.4 52.2c.7.2 1.3 3.8 1.6 8.7.6 12.4 3.7 15.8 14.1 15.8h5.2l2.3 6.1 2.4 6.1-2.5 2.6c-4.3 4.8-5.7 7.6-5.7 11.5 0 3.4.8 4.7 6.1 10.2l6 6.3-6.1 6.6c-14 15-34.5 18.6-52.7 9.4-6.9-3.4-15.9-12-19.1-18.3-11.8-23.3-2.7-50.7 20.4-61.7 8.4-4 21-5.5 28-3.3z" />
+                        <path
+                            d="M392.2 67.1c-26.4 5.2-40.6 33.6-28.7 57.6 12.2 24.7 45.3 30.3 64.7 10.8 2.5-2.6 5.6-6.6 6.9-9 2-3.7 2.1-4.6 1-7.3-1.5-3.5-5.7-5.7-8.9-4.5-1.3.5-4 3.1-6 5.8-6 7.9-11 10.9-19.3 11.3-8.9.5-14.7-1.6-20.5-7.4-6.7-6.7-9-16.5-5.8-25.6 3.5-10.5 13.1-17.2 24.4-17.2 7.6 0 12.3 2.1 18.7 8.3 3.1 3 5.1 4.1 7.3 4.1 4.1 0 7-3.1 7-7.6 0-2.9-.8-4.4-5-8.4-9.8-9.5-22.8-13.5-35.8-10.9zM173.5 268.1c-13 2.8-33.3 8.5-46 13-6 2.1-11.3 3.9-11.7 3.9-.3 0-1.2-1.6-1.8-3.6-1.6-4.6-6.6-10.3-10.7-12-6.9-2.9-9.4-2.1-52.5 15.6-22.7 9.4-42.4 17.8-43.8 18.8-1.3 1-3.5 3.8-4.7 6.2L0 314.4l.2 82.7c.3 82.2.3 82.8 2.4 85.6 3.3 4.5 8.2 7.3 12.7 7.3 2.9 0 22.4-7.6 73.5-28.6 38.3-15.7 70.9-29.5 72.5-30.6 3.6-2.6 6.6-9 6.7-14 0-2.1-.8-6-1.9-8.7l-1.9-5 5.2-2c8.7-3.4 14.3-4.4 22.4-3.8 15.9 1.1 21.1 3.8 59.5 30 18 12.2 24.6 16.2 31.1 18.5 10.1 3.7 22.8 5.7 31 4.8 3.3-.3 43.2-8.1 88.6-17.2 88.1-17.7 89.7-18.1 98.6-25.8 5.7-4.9 10.3-14 11.1-21.9 1.2-12.8-4.6-24.7-15.7-32.1-2.4-1.6-2.5-2-2.2-10.4.5-10.8-1.9-17.9-8.3-24.9-10.3-11.5-27.4-15-40.5-8.3-7.5 3.9-71.6 42.3-73.6 44.1-1.2 1.1-3.5 1.9-5.6 1.9h-3.5l-.5-6.8c-.6-8-3.8-15-9.5-20.4-4.5-4.3-48.4-34.6-63.1-43.4-5.6-3.5-12.8-7.2-16-8.4-6.4-2.5-46.9-11-51.9-11-4.4 0-7.3 3-7.3 7.4 0 4.5 3.3 7.1 10.2 8 8.5 1.1 37.8 7.6 43.7 9.7 6.6 2.3 16 8.2 48.4 30.3 13.7 9.3 26 18.4 27.4 20.3 3 3.9 4 10.6 2.3 15.7-1.5 4.7-7.9 8.6-14.1 8.6-3.1 0-13-3.1-33.4-10.5-15.9-5.8-29.8-10.5-30.8-10.5-2.6 0-6.7 4.5-6.7 7.3 0 5.1 2.6 6.5 33.5 17.7 26.5 9.7 30.8 10.9 36.5 11 8.4 0 12.7-1.2 19-5.5 6-4.1.3-3.4 67.2-8 60.4-4.3 64.2-4.3 69.4-1.7 15.6 8 12.8 29-4.7 35.6-6.3 2.3-168.4 34.6-173.8 34.6-6.5 0-16.6-2.4-23.4-5.4-3.2-1.4-15.6-9.2-27.5-17.4-35.7-24.3-40-26.7-55.2-29.8-11.8-2.3-22.9-1.6-34.5 2.4-4.9 1.7-9 3-9.2 2.9-1.1-1.2-36.3-88.3-35.9-89.2.8-2.1 38.4-13.6 55.9-17 11-2.2 13.3-3.2 14.7-6.4 1.3-3.3 0-7.5-2.9-9-2.7-1.5-6.1-1.3-16.6 1zm-74.5 17c2.6 4.8 54 130.5 54 132 0 1-1.8 2.4-4.7 3.7C134.7 426.6 16.2 475 15.6 475c-.9 0-.7-157.3.2-158.6.8-1.3 78-33.3 80.4-33.3 1-.1 2.2.8 2.8 2zm369.9 38.8c1.9 1 4.8 3.4 6.5 5.5 2.5 3 3.1 4.8 3.4 10.1.6 8.6-.2 9.5-8.7 9.6-3.6 0-20.5 1-37.6 2.3-17 1.2-31.1 2.2-31.3 2.1-.8-.6 50.7-30.2 54.1-31.1 4.8-1.3 8.8-.9 13.6 1.5z" />
+                    </svg>
+                    <span class="text">services</span>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#Testimonial" class="nav-link Testimonial" id="navLinkTestimonial">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                        <path
+                            d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z" />
+                        <path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z" />
+                        <path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+                        <path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+                    </svg>
+                    <span class="text">testimonial</span>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#Contact" class="nav-link Contact-Me" id="navLinkContactMe">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="icon" viewBox="0 0 24 24">
+                        <path
+                            d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z" />
+                    </svg>
+                    <span class="text">contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- ===================================== Phone Nav ===================================== -->
+
+    <!-- ====================================== Header ====================================== -->
+    <div class="container">
+        <section class="home" id="Home">
+            <div class="content">
+                <div class="left">
+                    <div class="top-content">
+                        <h3 class="welcome-line">welcome to my world</h3>
+                        <h1 class="heading">Hi, I’m
+                            <font class="name">Ali Jawaid</font>
+                            <span class="next-line">a
+                                <font class="profession"
+                                    data-typed-items="Software Engineer., Web Developer., Frontend Developer., Backend Developer., Full Stack Developer., Freelancer.">
+                                </font>
+                            </span>
+                        </h1>
+                        <p class="description">Web developer, with extensive knowledge and years of experience, working in web technologies and UI / UX design, delivering quality work.</p>
+                    </div>
+                    <div class="bottom-content">
+                        <p class="label">find with me</p>
+                        <div class="links">
+                            <a href="https://www.facebook.com/AliJawaidOfficial" target="_blank" class="link bx bxl-facebook"></a>
+                            <a href="https://www.instagram.com/alijawaidofficial.pk/" target="_blank" class="link bx bxl-instagram"></a>
+                            <a href="https://www.messenger.com/t/AliJawaidOfficial/" target="_blank" class="link bx bxl-messenger"></a>
+                            <a href="https://www.linkedin.com/in/alijawaidofficial/" target="_blank" class="link bx bxl-linkedin"></a>
+                            <a href="https://api.whatsapp.com/send?phone=923132958851&text=&type=phone_number&app_absent=0" target="_blank" class="link bx bxl-whatsapp"></a>
+                            <a href="https://github.com/AliJawaidOfficial" target="_blank" class="link bx bxl-github"></a>
+                            <a href="mailto:alijawaidofficial@gmail.com" target="_blank" class="link bx bx-envelope"></a>
+                            <a href="tel:923132958851" target="_blank" class="link bx bxs-phone-call"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="image-outer">
+                        <img src="dashboard/assets/images/logo.png" alt="Ali Jawaid Image" class="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ====================================== Header ====================================== -->
+
+    <!-- ======================================= About ======================================= -->
+    <div class="container">
+        <section class="about" id="About">
+            <h4 class="small-heading">my information</h4>
+            <h2 class="heading">About</h2>
+            <div class="content">
+                <div class="left">
+                    <div class="sticky">
+                        <div class="image-outer">
+                            <img src="dashboard/assets/images/ali-jawaid-about-us.png" class="image" alt="Ali Jawaid about us image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top-content">
+                        <!-- <h3 class="name">Ali Jawaid</h3> -->
+                        <p class="description">
+                            Hi i am <strong class="name">Ali Jawaid</strong>, I have a passion for creating functional and visually appealing web applications from the ground up. With a comprehensive understanding of front-end and back-end technologies,
+                            I am capable of delivering end-to-end solutions that meet the unique needs of clients and end-users.
+                        </p>
+                        <p class="description">
+                            My experience in developing custom web applications has honed my proficiency in HTML, CSS, JavaScript, and various front-end frameworks such as Bootstrap 3, Bootstrap 4, Bootstrap 5, Tailwind CSS and jQuery. I am well-versed in server-side scripting languages
+                            like PHP, OOP, and Laravel.
+                        </p>
+                        <p class="description">
+                            In addition to my technical skills, I possess a strong ability to work collaboratively with project teams, ensuring that all development efforts align with business objectives and user requirements. I have a keen eye for detail, and I pride myself on
+                            producing clean and maintainable code that adheres to best practices and industry standards.
+                        </p>
+                        <p class="description">
+                            My knowledge of software development methodologies, such as Agile and Scrum, allows me to contribute to project planning and execution while also ensuring timely delivery of projects. With a continuous focus on learning and staying up-to-date with the
+                            latest trends and technologies, I am committed to delivering high-quality work that exceeds client expectations.
+                        </p>
+                        <p class="description">
+                            If you're looking for a Full Stack Web Developer who can design, develop, and deploy scalable and responsive web applications, I am the right fit for your team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ======================================= About ======================================= -->
+
+    <!-- ====================================== Resume ====================================== -->
+    <div class="container">
+        <section class="resume" id="Resume">
+            <h4 class="small-heading">2+ years of experience</h4>
+            <h2 class="heading">Resume</h2>
+            <ul class="tabs-bar">
+                <li class="tab active" data-bs-tab-name="education-tab">education</li>
+                <li class="tab" data-bs-tab-name="professional-skills-tab">professional skills</li>
+                <li class="tab" data-bs-tab-name="experience-tab">experience</li>
+            </ul>
+
+            <div class="tab-content steps" id="education-tab-content">
+                <ul class="content-ul">
+                    <li class="content-li">
+                        <div class="layer">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="header">
+                                        <h5 class="title">Diploma Associate Engineering In Software Engineering</h5>
+                                        <p class="time">Aligarh Institute Of Technology (2021 - Present)
+                                        </p>
+                                    </div>
+                                    <p class="paragraph">I studied in this school from 9th standard to 10th standard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content-li">
+                        <div class="layer">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="header">
+                                        <h5 class="title">Secondary Education</h5>
+                                        <p class="time">Government Public Model Boys Secondary School (2019 - 2020)
+                                        </p>
+                                    </div>
+                                    <p class="paragraph">I studied in this school from 9th standard to 10th standard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content-li">
+                        <div class="layer">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="header">
+                                        <h5 class="title">Primary Education</h5>
+                                        <p class="time">Little Flower Schooling System (2008 - 2018)
+                                        </p>
+                                    </div>
+                                    <p class="paragraph">I studied in this school from nursery standard to 7th standard
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content skills" id="professional-skills-tab-content">
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">HTML5</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">CSS3</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">Bootstrap 3</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">Bootstrap 4</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">Bootstrap 5</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">Javascript</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">jQuery</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">Ajax</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">PHP (Core)</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">PHP (Object Oriented Programming)</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">Laravel</h5>
+                        <span class="percent">80%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="80%" style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">MySQL</h5>
+                        <span class="percent">99.9%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="99.9%" style="width: 99.9%;"></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">Wordpress (Basics)</h5>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="50%" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">SEO (Basics)</h5>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="50%" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">JAVA (Basics)</h5>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="50%" style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="layer">
+                        <h5 class="heading">Android Development With Android Studio (Basics)</h5>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="progress-bar"><span class="progress" data-bs-progress="50%" style="width: 50%;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content steps" id="experience-tab-content">
+                <ul class="content-ul">
+                    <li class="content-li">
+                        <div class="layer">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="header">
+                                        <h5 class="title">Full Stack &amp; Laravel Developer</h5>
+                                        <p class="time">Diligent Creators (2023 - Present)
+                                        </p>
+                                    </div>
+                                    <p class="paragraph">I worked here as a Full Stack &amp; Laravel Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content-li">
+                        <div class="layer">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="header">
+                                        <h5 class="title">Full Stack Developer</h5>
+                                        <p class="time">JOJO International (2022 - 2023)
+                                        </p>
+                                    </div>
+                                    <p class="paragraph">I worked here as a Full Stack Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content-li">
+                        <div class="layer">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="header">
+                                        <h5 class="title">Full Stack Developer</h5>
+                                        <p class="time">Depixels (2022 - 2022)
+                                        </p>
+                                    </div>
+                                    <p class="paragraph">I worked here as a Full Stack Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content-li">
+                        <div class="layer">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="header">
+                                        <h5 class="title">Full Stack Developer</h5>
+                                        <p class="time">Plug Orange (2021 - 2022)
+                                        </p>
+                                    </div>
+                                    <p class="paragraph">I worked here as a Full Stack Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- ====================================== Resume ====================================== -->
+
+    <!-- ===================================== Portfolio ===================================== -->
+    <div class="container">
+        <section class="portfolio" id="Portfolio">
+            <h4 class="small-heading">visit my portfolio and keep your feedback</h4>
+            <h2 class="heading">portfolio</h2>
+            <div class="cards" id="allProjects">
+                <div class="card">
+                    <div class="content">
+                        <div class="project-image">
+                            <img src="dashboard/projects/project-1.jpg" class="image" />
+                        </div>
+                        <div class="react">
+                            <span class="like">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z" />
+                                </svg>
+                                <span class="text">55</span>
+                            </span>
+                        </div>
+                        <h5 class="title">MI Logistics
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" data-name="Layer 1" viewBox="0 0 24 24">
+                                <path
+                                    d="M20,0H11c-.553,0-1,.448-1,1s.447,1,1,1h9c.179,0,.352,.024,.518,.068L.293,22.293c-.391,.391-.391,1.023,0,1.414,.195,.195,.451,.293,.707,.293s.512-.098,.707-.293L21.932,3.482c.044,.165,.068,.339,.068,.518V13c0,.552,.447,1,1,1s1-.448,1-1V4c0-2.206-1.794-4-4-4Z" />
+                            </svg>
+                        </h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="project-image">
+                            <img src="dashboard/projects/project-2.jpg" class="image" />
+                        </div>
+                        <div class="react">
+                            <span class="like">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z" />
+                                </svg>
+                                <span class="text">55</span>
+                            </span>
+                        </div>
+                        <h5 class="title">MI Logistics
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" data-name="Layer 1" viewBox="0 0 24 24">
+                                <path
+                                    d="M20,0H11c-.553,0-1,.448-1,1s.447,1,1,1h9c.179,0,.352,.024,.518,.068L.293,22.293c-.391,.391-.391,1.023,0,1.414,.195,.195,.451,.293,.707,.293s.512-.098,.707-.293L21.932,3.482c.044,.165,.068,.339,.068,.518V13c0,.552,.447,1,1,1s1-.448,1-1V4c0-2.206-1.794-4-4-4Z" />
+                            </svg>
+                        </h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="project-image">
+                            <img src="dashboard/projects/project-3.jpg" class="image" />
+                        </div>
+                        <div class="react">
+                            <span class="like">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z" />
+                                </svg>
+                                <span class="text">55</span>
+                            </span>
+                        </div>
+                        <h5 class="title">MI Logistics
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" data-name="Layer 1" viewBox="0 0 24 24">
+                                <path
+                                    d="M20,0H11c-.553,0-1,.448-1,1s.447,1,1,1h9c.179,0,.352,.024,.518,.068L.293,22.293c-.391,.391-.391,1.023,0,1.414,.195,.195,.451,.293,.707,.293s.512-.098,.707-.293L21.932,3.482c.044,.165,.068,.339,.068,.518V13c0,.552,.447,1,1,1s1-.448,1-1V4c0-2.206-1.794-4-4-4Z" />
+                            </svg>
+                        </h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="project-image">
+                            <img src="dashboard/projects/project-4.jpg" class="image" />
+                        </div>
+                        <div class="react">
+                            <span class="like">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z" />
+                                </svg>
+                                <span class="text">55</span>
+                            </span>
+                        </div>
+                        <h5 class="title">MI Logistics
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" data-name="Layer 1" viewBox="0 0 24 24">
+                                <path
+                                    d="M20,0H11c-.553,0-1,.448-1,1s.447,1,1,1h9c.179,0,.352,.024,.518,.068L.293,22.293c-.391,.391-.391,1.023,0,1.414,.195,.195,.451,.293,.707,.293s.512-.098,.707-.293L21.932,3.482c.044,.165,.068,.339,.068,.518V13c0,.552,.447,1,1,1s1-.448,1-1V4c0-2.206-1.794-4-4-4Z" />
+                            </svg>
+                        </h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="project-image">
+                            <img src="dashboard/projects/project-5.jpg" class="image" />
+                        </div>
+                        <div class="react">
+                            <span class="like">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z" />
+                                </svg>
+                                <span class="text">55</span>
+                            </span>
+                        </div>
+                        <h5 class="title">MI Logistics
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" data-name="Layer 1" viewBox="0 0 24 24">
+                                <path
+                                    d="M20,0H11c-.553,0-1,.448-1,1s.447,1,1,1h9c.179,0,.352,.024,.518,.068L.293,22.293c-.391,.391-.391,1.023,0,1.414,.195,.195,.451,.293,.707,.293s.512-.098,.707-.293L21.932,3.482c.044,.165,.068,.339,.068,.518V13c0,.552,.447,1,1,1s1-.448,1-1V4c0-2.206-1.794-4-4-4Z" />
+                            </svg>
+                        </h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="project-image">
+                            <img src="dashboard/projects/project-6.jpg" class="image" />
+                        </div>
+                        <div class="react">
+                            <span class="like">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z" />
+                                </svg>
+                                <span class="text">55</span>
+                            </span>
+                        </div>
+                        <h5 class="title">MI Logistics
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" data-name="Layer 1" viewBox="0 0 24 24">
+                                <path
+                                    d="M20,0H11c-.553,0-1,.448-1,1s.447,1,1,1h9c.179,0,.352,.024,.518,.068L.293,22.293c-.391,.391-.391,1.023,0,1.414,.195,.195,.451,.293,.707,.293s.512-.098,.707-.293L21.932,3.482c.044,.165,.068,.339,.068,.518V13c0,.552,.447,1,1,1s1-.448,1-1V4c0-2.206-1.794-4-4-4Z" />
+                            </svg>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ===================================== Portfolio ===================================== -->
+
+    <!-- ================================== Project Details ================================== -->
+    <div class="modal-outer project-modal" id="projectModal">
+        <div class="flex">
+            <div class="modal">
+                <button type="button" class="close-btn" id="projectModalCloseBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" id="Outline" viewBox="0 0 24 24">
+                        <path
+                            d="M23.707.293h0a1,1,0,0,0-1.414,0L12,10.586,1.707.293a1,1,0,0,0-1.414,0h0a1,1,0,0,0,0,1.414L10.586,12,.293,22.293a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0L12,13.414,22.293,23.707a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L13.414,12,23.707,1.707A1,1,0,0,0,23.707.293Z" />
+                    </svg>
+                </button>
+                <div class="content">
+                    <div class="left">
+                        <div class="swiper projects-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img src="dashboard/projects/img-1.jpg" class="image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img src="dashboard/projects/img-2.png" class="image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img src="dashboard/projects/project-3.jpg" class="image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img src="dashboard/projects/project-4.jpg" class="image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img src="dashboard/projects/project-5.jpg" class="image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img src="dashboard/projects/project-6.jpg" class="image" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1 class="title">MI Logistics</h1>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ab tenetur unde expedita exercitationem asperiores quaerat dolorum nesciunt officia tempore?</p>
+                        <div class="buttons-group">
+                            <button type="button" id="like">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z" />
+                                </svg>
+                                <span class="text">45</span>
+                            </button>
+                            <a href="index.html" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="icon">
+                                    <path
+                                        d="M23.271,9.419C21.72,6.893,18.192,2.655,12,2.655S2.28,6.893.729,9.419a4.908,4.908,0,0,0,0,5.162C2.28,17.107,5.808,21.345,12,21.345s9.72-4.238,11.271-6.764A4.908,4.908,0,0,0,23.271,9.419Zm-1.705,4.115C20.234,15.7,17.219,19.345,12,19.345S3.766,15.7,2.434,13.534a2.918,2.918,0,0,1,0-3.068C3.766,8.3,6.781,4.655,12,4.655s8.234,3.641,9.566,5.811A2.918,2.918,0,0,1,21.566,13.534Z" />
+                                    <path
+                                        d="M12,7a5,5,0,1,0,5,5A5.006,5.006,0,0,0,12,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,12,15Z" />
+                                </svg>
+                                <span class="label">View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================== Project Details ================================== -->
+
+    <!-- ====================================== Services ====================================== -->
+    <div class="container">
+        <section class="features" id="Services">
+            <h4 class="small-heading">services</h4>
+            <h2 class="heading">what i do</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="icon" viewBox="0 0 24 24">
+                            <path d="M17.115,8.05A1.5,1.5,0,1,0,18.95,9.115,1.5,1.5,0,0,0,17.115,8.05Z" />
+                            <path d="M12.115,5.05A1.5,1.5,0,1,0,13.95,6.115,1.5,1.5,0,0,0,12.115,5.05Z" />
+                            <path d="M7.115,8.05A1.5,1.5,0,1,0,8.95,9.115,1.5,1.5,0,0,0,7.115,8.05Z" />
+                            <path d="M7.115,14.05A1.5,1.5,0,1,0,8.95,15.115,1.5,1.5,0,0,0,7.115,14.05Z" />
+                            <path
+                                d="M12.5.007A12,12,0,0,0,.083,12a12.014,12.014,0,0,0,12,12c.338,0,.67-.022,1-.05a1,1,0,0,0,.916-1l-.032-3.588A3.567,3.567,0,0,1,20.057,16.8l.1.1a1.912,1.912,0,0,0,1.769.521,1.888,1.888,0,0,0,1.377-1.177A11.924,11.924,0,0,0,24.08,11.7,12.155,12.155,0,0,0,12.5.007Zm8.982,15.4-.014-.014a5.567,5.567,0,0,0-9.5,3.985L11.992,22a10,10,0,0,1,.09-20c.117,0,.235,0,.353.006a10.127,10.127,0,0,1,9.645,9.743A9.892,9.892,0,0,1,21.485,15.4Z" />
+                        </svg>
+                        <h5 class="card-heading">frontend development</h5>
+                        <p class="card-paragraph">I throw myself down among the tall grass by the stream as Ilie close to the earth.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" data-name="Layer 1" viewBox="0 0 24 24">
+                            <path
+                                d="M15.045,0c-.027-.001-6.063-.001-6.09,0-2.736,.024-4.955,2.258-4.955,4.999v14c0,2.757,2.243,5,5,5h6c2.757,0,5-2.243,5-5V5C20,2.258,17.781,.025,15.045,0Zm2.955,18.999c0,1.654-1.346,3-3,3h-6c-1.654,0-3-1.346-3-3V5c0-1.453,1.038-2.667,2.411-2.942l.694,1.389c.169,.339,.516,.553,.895,.553h4c.379,0,.725-.214,.895-.553l.694-1.389c1.373,.274,2.411,1.489,2.411,2.942v14Zm-5,1h-2c-.552,0-1-.448-1-1h0c0-.552,.448-1,1-1h2c.552,0,1,.448,1,1h0c0,.552-.448,1-1,1Z" />
+                        </svg>
+                        <h5 class="card-heading">responsive designs</h5>
+                        <p class="card-paragraph">I throw myself down among the tall grass by the stream as Ilie close to the earth.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="icon" viewBox="0 0 24 24" data-name="Layer 1">
+                            <path
+                                d="m24 11.5a4.476 4.476 0 0 0 -1.706-3.5 4.481 4.481 0 0 0 -2.794-8h-15a4.481 4.481 0 0 0 -2.794 8 4.443 4.443 0 0 0 0 7 4.481 4.481 0 0 0 2.794 8h15a4.481 4.481 0 0 0 2.794-8 4.476 4.476 0 0 0 1.706-3.5zm-22-7a2.5 2.5 0 0 1 2.5-2.5h.5v1a1 1 0 0 0 2 0v-1h2v1a1 1 0 0 0 2 0v-1h8.5a2.5 2.5 0 0 1 0 5h-15a2.5 2.5 0 0 1 -2.5-2.5zm20 14a2.5 2.5 0 0 1 -2.5 2.5h-15a2.5 2.5 0 0 1 0-5h.5v1a1 1 0 0 0 2 0v-1h2v1a1 1 0 0 0 2 0v-1h8.5a2.5 2.5 0 0 1 2.5 2.5zm-17.5-4.5a2.5 2.5 0 0 1 0-5h.5v1a1 1 0 0 0 2 0v-1h2v1a1 1 0 0 0 2 0v-1h8.5a2.5 2.5 0 0 1 0 5z" />
+                        </svg>
+                        <h5 class="card-heading">backend development</h5>
+                        <p class="card-paragraph">I throw myself down among the tall grass by the stream as Ilie close to the earth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ===================================== Services ===================================== -->
+
+    <!-- ==================================== Testimonial ==================================== -->
+    <div class="container">
+        <section class="testimonial" id="Testimonial">
+            <h4 class="small-heading">what clients say</h4>
+            <h2 class="heading">testimonial</h2>
+            <div class="swiper testimonial-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-1.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-2.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-3.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-1.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-2.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-3.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-1.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-2.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="left">
+                                <div class="box">
+                                    <div class="header">
+                                        <img src="dashboard/testimonials/user-3.jpg" class="image" />
+                                    </div>
+                                    <div class="footer">
+                                        <h3 class="name">Nevine Acotanza</h3>
+                                        <p class="description">Chief Operating Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <h3 class="name">Ayesha Diagnostic Laboratory</h3>
+                                    <div class="ratings">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill icon" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83
+                                            4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="paragraph">
+                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+    </div>
+    <!-- ==================================== Testimonial ==================================== -->
+
+    <!-- ======================================== Ad ======================================== -->
+    <div class="container">
+        <section class="ad" id="Ad">
+            <div class="box">
+                <video src="dashboard/assets/videos/ad.mp4" class="bg-video" loading="lazy" decoding="async" autoplay loop muted></video>
+                <div class="content">
+                    <div class="left">
+                        <h2 class="inner_heading">You have a new project</h2>
+                        <p class="inner_text">Contact me now and get a 30% discount on your new project.</p>
+                        <a href="#Contact" class="button" id="adContactButton">
+                            <span class="text">Contact Me</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.119.882a2.966,2.966,0,0,0-2.8-.8l-16,3.37a4.995,4.995,0,0,0-2.853,8.481L3.184,13.65a1,1,0,0,1,.293.708v3.168a2.965,2.965,0,0,0,.3,1.285l-.008.007.026.026A3,3,0,0,0,5.157,20.2l.026.026.007-.008a2.965,2.965,0,0,0,1.285.3H9.643a1,1,0,0,1,.707.292l1.717,1.717A4.963,4.963,0,0,0,15.587,24a5.049,5.049,0,0,0,1.605-.264,4.933,4.933,0,0,0,3.344-3.986L23.911,3.715A2.975,2.975,0,0,0,23.119.882ZM4.6,12.238,2.881,10.521a2.94,2.94,0,0,1-.722-3.074,2.978,2.978,0,0,1,2.5-2.026L20.5,2.086,5.475,17.113V14.358A2.978,2.978,0,0,0,4.6,12.238Zm13.971,7.17a3,3,0,0,1-5.089,1.712L11.762,19.4a2.978,2.978,0,0,0-2.119-.878H6.888L21.915,3.5Z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="dashboard/assets/images/logo.png" alt="Ali Jawaid ad image" class="ad-image">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ======================================== Ad ======================================== -->
+
+    <!-- ==================================== Contact Me ==================================== -->
+    <div class="container">
+        <section class="contact-me" id="Contact">
+            <h4 class="small-heading">Lets Make a Connection</h4>
+            <h2 class="heading">contact</h2>
+            <div class="content">
+                <div class="card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12225.34399907447!2d67.05678396738283!3d24.9748654531206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb341afaf255f0f%3A0x5ce09cd61cdc240f!2sSoftware%20Engineer%20Ali%20Jawaid!5e1!3m2!1sen!2s!4v1685280920097!5m2!1sen!2s"
+                        style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <form action="Thanks.html" method="POST" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-control">
+                            <input type="text" name="name" id="name" class="input_field" placeholder="Name" />
+                        </div>
+                        <div class="form-control">
+                            <input type="number" name="phone" id="phone" class="input_field" placeholder="Phone Number" />
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" id="email" class="input_field" placeholder="Email" />
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="subject" id="subject" class="input_field" placeholder="Subject" />
+                    </div>
+                    <div class="form-control">
+                        <textarea name="message" id="message" class="input_field" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- ==================================== Contact Me ==================================== -->
+
+    <!-- ====================================== Footer ====================================== -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="content">
+                    <div class="left">
+                        <a href="index.html">
+                            <svg class="flogo" onclick="scrollToTop();" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 116">
+                                <defs>
+                                    <style>
+                                        .footer-cls-1 {
+                                            font-size: 50px;
+                                            fill: var(--background-single-color);
+                                            font-family: ArialRoundedMTBold, Arial Rounded MT Bold;
+                                        }
+
+                                        .footer-cls-2 {
+                                            letter-spacing: -0.02em;
+                                        }
+
+                                        .footer-cls-3 {
+                                            fill: none;
+                                            stroke: var(--background-single-color);
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 5px;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <text class="footer-cls-1" transform="translate(139.57 79.43)">ALI
+                                            <tspan class="footer-cls-2" x="105" y="0">J</tspan>
+                                            <tspan x="137.37" y="0">AWAID</tspan>
+                                        </text>
+                                        <image width="700" height="960"
+                                            transform="translate(23.77 13.93) scale(0.1 0.1)"
+                                            xlink:href="dashboard/assets/images/logo.png" />
+                                        <circle class="footer-cls-3" cx="58" cy="58" r="54" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="links">
+                            <a href="https://www.facebook.com/AliJawaidOfficial" target="_blank" class="link bx bxl-facebook"></a>
+                            <a href="https://www.instagram.com/alijawaidofficial.pk/" target="_blank" class="link bx bxl-instagram"></a>
+                            <a href="https://www.messenger.com/t/AliJawaidOfficial/" target="_blank" class="link bx bxl-messenger"></a>
+                            <a href="https://www.linkedin.com/in/alijawaidofficial/" target="_blank" class="link bx bxl-linkedin"></a>
+                            <a href="https://api.whatsapp.com/send?phone=923132958851&text=&type=phone_number&app_absent=0" target="_blank" class="link bx bxl-whatsapp"></a>
+                            <a href="https://github.com/AliJawaidOfficial" target="_blank" class="link bx bxl-github"></a>
+                            <a href="mailto:alijawaidofficial@gmail.com" target="_blank" class="link bx bx-envelope"></a>
+                            <a href="tel:923132958851" target="_blank" class="link bx bxs-phone-call"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====================================== Footer ====================================== -->
+
+
+    <!-- ===================================== jQuery ===================================== -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- ================================ jQuery Validation ================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <!-- ================================== Aos Animation ================================== -->
+    <script src="assets/vendors/aos/aos.js"></script>
+    <!-- ================================== Swipe Handler ================================== -->
+    <script src="assets/vendors/detect-swipe-handler/dist/jquerySwipeHandler.js"></script>
+    <!-- ====================================== Typed ====================================== -->
+    <script src="assets/vendors/typed.js/typed.js"></script>
+    <!-- ================================== Pure Counter ================================== -->
+    <script src="assets/vendors/purecounter/purecounter.js"></script>
+    <!-- ================================== Swiper Slider ================================== -->
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <!-- ==================================== Custom JS ==================================== -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
